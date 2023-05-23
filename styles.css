@@ -1,0 +1,208 @@
+/* Elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+
+html{
+    background-color: blue;
+}
+body{
+    font-family: serif;
+    background-color: #77D4FC;
+}
+nav{
+    background-color: #77D4FC;
+}
+p, li, ul{
+    margin: 10px;
+    font-size: large;
+}
+h3{
+    font-family: instrumental, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+hr{
+border: 4px;
+border-top: 4px dotted black;
+}
+input, textarea{
+    opacity: 80%;
+    border: 2px solid
+    id black;
+    border-radius: 50px;
+    width: 100%;
+    padding: 12px 40px;
+    margin: 8px 40px;
+    /* box-sizing: border-box; */
+}
+footer{
+    height: 150px;
+    text-align: center;
+}
+td{
+    padding-left: 20px;
+}
+
+
+
+
+/* Classes */
+.logo-image{
+    height: 60px;
+    width: 80px;
+    /* padding-left: 10px; */
+
+}
+.nav-link{
+    /* padding-left: 50px; */
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+.div-after-nav{
+    display: block;
+    background-color: yellow;
+}
+.name-p{
+    font-size: 50px;
+    /* font-weight: bold; */
+    font-family: rowdies;
+    opacity: 90%;
+}
+.form-div{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    /* padding: 1rem; */
+}
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-img{
+    margin: 0px 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+
+/* Ids */
+#avatar-img{
+    width: 30%;
+    /* margin-left: auto; */
+    margin-right: 100px;
+    float: right
+    /* border-radius: 50%; */
+}
+#projects-and-experience{
+line-height: 2;
+}
+#socials-div{
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: auto;
+    padding: 50px 0px 0px 0px;
+}
+#home{
+    text-align: center;
+    background-color: #77D4FC;
+    color: white;
+    background-image: url("images/home-bgi1.jpg");
+}
+#projects{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+#projects a{
+    text-decoration: none ;
+    position: relative;
+    line-height: 2.5;
+    margin-bottom: 15px;
+}
+a span{
+    font-family: monospace;
+    font-size: 18px;
+    color: black;
+}
+a span:hover{
+    color: blue;
+    font-size: 20px;
+}
+a span::after{
+    content: " ";
+    background-color: green;
+    height: 2px;
+    display: block;
+    width: 100%;
+}
+#hello-p{
+    font-size: 50px;
+    font-family: sacramento;
+    font-weight: bold;
+}
+
+
+#home p{
+    /* float: left */
+    text-align: left
+}
+
+#projects-and-experience > p{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+#contact > p{
+    text-align: center;
+}
+
+#experience-div{
+    background-color: white;
+    text-align: left;
+    margin: auto;
+    width: 500px;
+    height: fit-content;
+    border-radius: 15px;
+    border-width: 10px;
+    border: 2px solid #02e6aa;
+}
+#experience-div h4{
+    text-align: center;
+    color: #77D4FC;
+    font-weight: 800;
+}
+/* Responsive */
+@media (max-width:948px) {
+    input, textarea{
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 100%;
+        padding: 12px 40px;
+        margin: 8px;
+    }
+    input, textarea{
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 70%;
+        padding: 12px 40px;
+        margin: 8px 5px;
+        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+        /* box-sizing: border-box; */
+    }
+    #avatar-img{
+        margin-top: 100px;
+        margin-right: 50px;
+        width: 40%;
+    }
+}
